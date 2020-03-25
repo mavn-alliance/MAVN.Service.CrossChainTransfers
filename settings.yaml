@@ -1,0 +1,52 @@
+CrossChainTransfersService:
+  Db:
+    LogsConnString:
+      settings-key: CrossChainTransfersService-LogsConnString
+      types:
+        - AzureTableStorage
+    DataConnString:
+      settings-key: CrossChainTransfersService-DataConnString
+  RabbitMq:
+    RabbitMqConnectionString:
+      settings-key: WalletManagmentRabbitMQ
+      types:
+        - RabbitMq
+    NotificationRabbitMqConnectionString:
+      settings-key: MAVNIntegrationRabbitMQ
+      types:
+        - RabbitMq
+  Notifications:
+    PushNotifications:
+      CrossChainWithdrawSuccessfulTemplateId:
+        settings-key: CrossChainTransfersService-Notifications-PushNotifications-CrossChainWithdrawSuccessfulTemplateId
+      CrossChainWithdrawUnsuccessfulTemplateId:
+        settings-key: CrossChainTransfersService-Notifications-PushNotifications-CrossChainWithdrawUnsuccessfulTemplateId
+      CrossChainDepositSuccessfulTemplateId:
+        settings-key: CrossChainTransfersService-Notifications-PushNotifications-CrossChainDepositSuccessfulTemplateId
+      CrossChainDepositUnsuccessfulTemplateId:
+        settings-key: CrossChainTransfersService-Notifications-PushNotifications-CrossChainDepositUnsuccessfulTemplateId
+  PrivateBlockchainGatewayContractAddress:
+    settings-key: PrivateBlockchainGatewayContractAddress
+  MasterWalletAddress:
+    settings-key: CrossChainTransfersService-MasterWalletAddress
+PrivateBlockchainFacadeService:
+  ServiceUrl:
+    settings-key: PrivateBlockchainFacadeServiceUrl
+WalletManagementService:
+  ServiceUrl:
+    settings-key: WalletManagementServiceUrl
+CrossChainWalletLinkerService:
+  ServiceUrl:
+    settings-key: CrossChainWalletLinkerServiceUrl
+SlackNotifications:
+    AzureQueue:
+        ConnectionString:
+            settings-key: SlackNotificationsConnString
+            types:
+                - AzureTableStorage
+        QueueName:
+            settings-key: SlackQueueName
+MonitoringServiceClient:
+    MonitoringServiceUrl:
+        settings-key: MonitoringServiceUrl
+

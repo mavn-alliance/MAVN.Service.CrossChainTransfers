@@ -22,7 +22,7 @@ namespace MAVN.Service.CrossChainTransfers.MsSqlRepositories.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Lykke.Service.CrossChainTransfers.MsSqlRepositories.Entities.DeduplicationEntity", b =>
+            modelBuilder.Entity("MAVN.Service.CrossChainTransfers.MsSqlRepositories.Entities.DeduplicationEntity", b =>
                 {
                     b.Property<string>("DeduplicationId")
                         .ValueGeneratedOnAdd()

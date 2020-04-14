@@ -1,5 +1,5 @@
-using AutoMapper;
-using Lykke.PrivateBlockchain.Definitions;
+﻿using AutoMapper;
+using MAVN.PrivateBlockchain.Definitions;
 using MAVN.Service.CrossChainTransfers.Domain.Common;
 using MAVN.Service.CrossChainTransfers.Domain.Enums;
 using MAVN.Service.CrossChainTransfers.Domain.Models;

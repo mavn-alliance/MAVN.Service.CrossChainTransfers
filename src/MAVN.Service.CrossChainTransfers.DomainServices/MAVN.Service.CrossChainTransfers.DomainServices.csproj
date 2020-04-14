@@ -11,12 +11,12 @@
     <PackageReference Include="Falcon.Job.EthereumBridge.Contract" Version="2.2.0" />
     <PackageReference Include="Falcon.Job.QuorumTransactionWatcher.Contract" Version="4.8.0" />
     <PackageReference Include="Falcon.Numerics" Version="0.1.1" />
-    <PackageReference Include="Falcon.PrivateBlockchain.MVNGateway" Version="2.1.0" />
     <PackageReference Include="Falcon.Service.CrossChainWalletLinker.Client" Version="1.2.0" />
     <PackageReference Include="Falcon.Service.NotificationSystem.SubscriberContract" Version="1.0.2" />
     <PackageReference Include="Falcon.Service.PrivateBlockchainFacade.Client" Version="2.9.0" />
     <PackageReference Include="Falcon.Service.PrivateBlockchainFacade.Contract" Version="2.13.0" />
     <PackageReference Include="Falcon.Service.WalletManagement.Client" Version="3.5.0" />
     <PackageReference Include="Lykke.RabbitMqBroker" Version="7.13.1" />
+    <PackageReference Include="MAVN.PrivateBlockchain.MVNGateway" Version="1.0.0-beta.1" />
   </ItemGroup>
 </Project>

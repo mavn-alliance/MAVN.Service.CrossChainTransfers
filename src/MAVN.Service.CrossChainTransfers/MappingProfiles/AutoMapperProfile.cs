@@ -1,6 +1,6 @@
-using AutoMapper;
+﻿using AutoMapper;
 using Falcon.Numerics;
-using Lykke.PrivateBlockchain.Definitions;
+using MAVN.PrivateBlockchain.Definitions;
 using MAVN.Service.CrossChainTransfers.Domain.Models;
 
 namespace MAVN.Service.CrossChainTransfers.MappingProfiles

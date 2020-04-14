@@ -1,6 +1,6 @@
-using System.Numerics;
+﻿using System.Numerics;
 using Falcon.Numerics;
-using Lykke.PrivateBlockchain.Definitions;
+using MAVN.PrivateBlockchain.Definitions;
 using MAVN.Service.CrossChainTransfers.Domain.Common;
 using Nethereum.ABI.FunctionEncoding;
 using Nethereum.Contracts;

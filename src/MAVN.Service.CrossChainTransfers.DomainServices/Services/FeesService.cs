@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
-using Falcon.Numerics;
+using MAVN.Numerics;
 using MAVN.Service.CrossChainTransfers.Domain.Services;
-using Lykke.Service.PrivateBlockchainFacade.Client;
-using Lykke.Service.PrivateBlockchainFacade.Client.Models;
+using MAVN.Service.PrivateBlockchainFacade.Client;
+using MAVN.Service.PrivateBlockchainFacade.Client.Models;
 using FeesError = MAVN.Service.CrossChainTransfers.Domain.Enums.FeesError;
 
 namespace MAVN.Service.CrossChainTransfers.DomainServices.Services

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Lykke.Common;
 using Lykke.Common.Log;
-using Falcon.Numerics;
+using MAVN.Numerics;
 using Lykke.RabbitMqBroker.Publisher;
 using MAVN.Service.CrossChainTransfers.Domain.RabbitMq.Publishers;
 using MAVN.Service.CrossChainTransfers.Domain.Services;

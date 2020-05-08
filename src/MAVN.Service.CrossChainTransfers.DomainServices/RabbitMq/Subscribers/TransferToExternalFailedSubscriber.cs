@@ -1,9 +1,10 @@
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Common.Log;
 using Lykke.Common.Log;
 using Lykke.RabbitMqBroker.Subscriber;
 using MAVN.Service.CrossChainTransfers.Domain.RabbitMq.Handlers;
-using Lykke.Service.PrivateBlockchainFacade.Contract.Events;
+using MAVN.Service.PrivateBlockchainFacade.Contract.Events;
+using MAVN.Numerics;
 
 namespace MAVN.Service.CrossChainTransfers.DomainServices.RabbitMq.Subscribers
 {
@@ -26,7 +27,7 @@ namespace MAVN.Service.CrossChainTransfers.DomainServices.RabbitMq.Subscribers
 
         protected override async Task ProcessMessageAsync(TransferToExternalFailedEvent message)
         {
-            await _handler.HandleAsync(message.CustomerId, message.Amount);
+            await _handler.HandleAsync(message.CustomerId, Money18.Parse(message.Amount.ToString()));
             _log.Info("Processed TransferToExternalFailedEvent", message);
         }
     }

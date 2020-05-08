@@ -1,4 +1,4 @@
-using Autofac;
+﻿using Autofac;
 using Lykke.Sdk;
 using MAVN.Service.CrossChainTransfers.Domain.Common;
 using MAVN.Service.CrossChainTransfers.Domain.RabbitMq.Handlers;
@@ -8,9 +8,9 @@ using MAVN.Service.CrossChainTransfers.DomainServices.RabbitMq.Handlers;
 using MAVN.Service.CrossChainTransfers.DomainServices.Services;
 using MAVN.Service.CrossChainTransfers.Services;
 using MAVN.Service.CrossChainTransfers.Settings;
-using Lykke.Service.CrossChainWalletLinker.Client;
-using Lykke.Service.PrivateBlockchainFacade.Client;
-using Lykke.Service.WalletManagement.Client;
+using MAVN.Service.CrossChainWalletLinker.Client;
+using MAVN.Service.PrivateBlockchainFacade.Client;
+using MAVN.Service.WalletManagement.Client;
 using Lykke.SettingsReader;
 
 namespace MAVN.Service.CrossChainTransfers.Modules

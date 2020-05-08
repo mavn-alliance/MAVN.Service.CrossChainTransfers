@@ -3,7 +3,7 @@ using Common.Log;
 using Lykke.Common.Log;
 using Lykke.RabbitMqBroker.Subscriber;
 using MAVN.Service.CrossChainTransfers.Domain.RabbitMq.Handlers;
-using Lykke.Service.PrivateBlockchainFacade.Contract.Events;
+using MAVN.Service.PrivateBlockchainFacade.Contract.Events;
 using MAVN.Numerics;
 
 namespace MAVN.Service.CrossChainTransfers.DomainServices.RabbitMq.Subscribers

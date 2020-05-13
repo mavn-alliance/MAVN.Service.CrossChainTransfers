@@ -27,7 +27,7 @@ namespace MAVN.Service.CrossChainTransfers.DomainServices.RabbitMq.Subscribers
 
         protected override async Task ProcessMessageAsync(TransferToExternalFailedEvent message)
         {
-            await _handler.HandleAsync(message.CustomerId, Money18.Parse(message.Amount.ToString()));
+            await _handler.HandleAsync(message.CustomerId, message.Amount);
             _log.Info("Processed TransferToExternalFailedEvent", message);
         }
     }

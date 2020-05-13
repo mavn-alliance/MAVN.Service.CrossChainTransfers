@@ -28,7 +28,7 @@ namespace MAVN.Service.CrossChainTransfers.DomainServices.RabbitMq.Subscribers
         protected override async Task ProcessMessageAsync(TransferToInternalDetectedEvent message)
         {
             await _handler.HandleAsync(message.OperationId, message.PrivateAddress, message.PublicAddress,
-                Money18.Parse(message.Amount.ToString()), message.PublicTransferId);
+                message.Amount, message.PublicTransferId);
             _log.Info("Processed TransferToInternalDetectedEvent", message);
         }
     }

@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="Lykke.RabbitMqBroker" Version="7.13.1" />
-    <PackageReference Include="MAVN.Job.EthereumBridge.Contract" Version="1.0.1" />
+    <PackageReference Include="MAVN.Job.EthereumBridge.Contract" Version="1.1.0" />
     <PackageReference Include="MAVN.Job.QuorumTransactionWatcher.Contract" Version="1.1.0" />
     <PackageReference Include="MAVN.Numerics" Version="1.0.0" />
     <PackageReference Include="MAVN.PrivateBlockchain.MVNGateway" Version="1.0.0-beta.1" />

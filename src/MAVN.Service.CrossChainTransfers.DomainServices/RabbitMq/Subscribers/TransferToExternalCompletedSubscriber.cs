@@ -27,7 +27,7 @@ namespace MAVN.Service.CrossChainTransfers.DomainServices.RabbitMq.Subscribers
 
         protected override async Task ProcessMessageAsync(TransferToExternalCompletedEvent message)
         {
-            await _handler.HandleAsync(message.PrivateAddress, Money18.Parse(message.Amount.ToString()), message.EventId);
+            await _handler.HandleAsync(message.PrivateAddress, message.Amount, message.EventId);
             _log.Info("Processed TransferToExternalCompletedEvent", message);
         }
     }

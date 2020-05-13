@@ -1,7 +1,7 @@
 using System;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.CrossChainTransfers.Domain.Repositories;
 using MAVN.Service.CrossChainTransfers.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;

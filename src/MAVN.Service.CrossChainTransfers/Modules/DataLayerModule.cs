@@ -1,5 +1,5 @@
 using Autofac;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.CrossChainTransfers.Domain.Repositories;
 using MAVN.Service.CrossChainTransfers.MsSqlRepositories;
 using MAVN.Service.CrossChainTransfers.MsSqlRepositories.Repositories;

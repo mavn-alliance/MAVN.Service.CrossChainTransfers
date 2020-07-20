@@ -1,10 +1,10 @@
-using Autofac;
-using MAVN.Common.MsSql;
+﻿using Autofac;
 using MAVN.Service.CrossChainTransfers.Domain.Repositories;
 using MAVN.Service.CrossChainTransfers.MsSqlRepositories;
 using MAVN.Service.CrossChainTransfers.MsSqlRepositories.Repositories;
 using MAVN.Service.CrossChainTransfers.Settings;
 using Lykke.SettingsReader;
+using MAVN.Persistence.PostgreSQL.Legacy;
 
 namespace MAVN.Service.CrossChainTransfers.Modules
 {
@@ -19,7 +19,7 @@ namespace MAVN.Service.CrossChainTransfers.Modules
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterMsSql(
+            builder.RegisterPostgreSQL(
                 _dbSettings.DataConnString,
                 connString => new CrossChainTransfersContext(connString, false),
                 dbConn => new CrossChainTransfersContext(dbConn));

@@ -1,18 +1,19 @@
-using System;
+﻿using System;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.CrossChainTransfers.Domain.Repositories;
 using MAVN.Service.CrossChainTransfers.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 namespace MAVN.Service.CrossChainTransfers.MsSqlRepositories.Repositories
 {
     public class DeduplicationLogRepository : IDeduplicationLogRepository
     {
-        private readonly MsSqlContextFactory<CrossChainTransfersContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<CrossChainTransfersContext> _contextFactory;
 
-        public DeduplicationLogRepository(MsSqlContextFactory<CrossChainTransfersContext> contextFactory)
+        public DeduplicationLogRepository(PostgreSQLContextFactory<CrossChainTransfersContext> contextFactory)
         {
             _contextFactory = contextFactory;
         }
@@ -31,8 +32,8 @@ namespace MAVN.Service.CrossChainTransfers.MsSqlRepositories.Repositories
                 }
                 catch (DbUpdateException e)
                 {
-                    if (e.InnerException is SqlException sqlException &&
-                        sqlException.Number == MsSqlErrorCodes.PrimaryKeyConstraintViolation)
+                    if (e.InnerException is PostgresException sqlException &&
+                        sqlException.SqlState == PostgresErrorCodes.UniqueViolation)
                     {
                         return true;
                     }
